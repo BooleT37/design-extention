@@ -1,0 +1,81 @@
+.sample-div {
+    background: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100px;
+}
+
+.designOverlay_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 79px;
+    height: 90px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.designOverlay_image_hidden {
+    display: none;
+}
+
+.designOverlay_panel {
+    position: absolute;
+    top: 75px;
+    right: 22px;
+    width: 145px;
+    padding: 4px;
+    text-align: right;
+    background: #fbfbfb;
+    border: solid 1px #a0a0a0;
+}
+
+.designOverlay_panel.designOverlay_panel_hidden {
+    display: none;
+}
+
+.designOverlay_togleButton {
+    width: 60px;
+    margin: 0 8px 5px 0;
+}
+
+.designOverlay_controls {
+    color: gray;
+    text-align: right;
+}
+
+.designOverlay_control {
+    margin-bottom: 3px;
+}
+
+.designOverlay_positionInput {
+    width: 52px;
+}
+
+.designOverlay_opacityInput {
+    width: 42px;
+    margin-right: 26px;
+}
+
+.designOverlay_panel.designOverlay_panel_compact {
+    background: transparent;
+    border: none;
+    width: auto;
+}
+
+
+.designOverlay_panel.designOverlay_panel_compact .designOverlay_controls {
+    display: none;
+}
+
+.designOverlay_panel.designOverlay_panel_compact .designOverlay_togleButton {
+    opacity: 0.5;
+}
+
+.designOverlay_panel.designOverlay_panel_compact .designOverlay_togleButton:hover {
+    opacity: 1;
+}
