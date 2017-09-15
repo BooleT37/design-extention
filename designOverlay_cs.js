@@ -80,7 +80,7 @@ class DesignOverlay {
 
     renderBaseImage() {
         const img = document.createElement("img");
-        img.setAttribute("src", "./Design.jpg");
+        img.setAttribute("src", "./Design.png");
         img.setAttribute("alt", "Design image");
         img.classList.add("designOverlay_image");
         document.body.appendChild(img);
@@ -213,7 +213,7 @@ class DesignOverlay {
     }
 
     _onOpacityChange(event) {
-        this._model.opacity = parseInt(event.target.value, 10);
+        this._model.opacity = parseFloat(event.target.value, 10);
 
         this.applyChangesToImage();
         this.applyChangesToPanel();
